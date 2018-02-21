@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tracker
 
 To start your Phoenix server:
@@ -18,3 +19,7 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+=======
+# tracker
+A task tracker created using Phoenix and Elixir
+>>>>>>> a0b4e227dadee221bcd12ccc9d8dff15718bafa2
