@@ -1,0 +1,25 @@
+<!-- basics of the index page were created with the help of cs4550 lecture notes -->
+
+<div class="row">
+  <div class="col">
+
+    <%= if @current_user do %>
+    <!-- take them to the task page -->
+    <span><%= link "Task List", to: task_path(@conn, :index) %></span>
+    <%= end %>
+    
+    <h1>Log In</h1>
+<!-- session_path(@conn, :create) -->
+<%= form_tag("/session", method: :task) do %>
+  <div class="form-group">
+    Email
+    <input type="email" name="email" placeholder="user@example.com" >
+  </div>
+  <!-- passwords come later -->
+  <div class="form-group">
+    <button class="btn btn-primary">Log in</button>
+    <%= link "Register", to: user_path(@conn, :new) %>
+  </div>
+<% end %>
+  </div>
+</div>
