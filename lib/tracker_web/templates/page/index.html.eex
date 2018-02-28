@@ -6,8 +6,8 @@
     <%= if @current_user do %>
     <!-- take them to the task page -->
     <span><%= link "Task List", to: task_path(@conn, :index) %></span>
-    <%= end %>
-    
+    <% end %>
+
     <h1>Log In</h1>
 <!-- session_path(@conn, :create) -->
 <%= form_tag("/session", method: :task) do %>

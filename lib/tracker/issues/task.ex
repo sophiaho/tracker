@@ -19,7 +19,7 @@ defmodule Tracker.Issues.Task do
     task
     |> cast(attrs, [:title, :description, :length, :complete, :user_id])
     |> validate_required([:title, :description, :length, :complete, :user_id])
-    |> validate_increment
+    #|> validate_increment
   end
 
 # ATTRIBUTION: created with the help of a stack overflow question on custom Changeset

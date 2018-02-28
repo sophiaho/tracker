@@ -29,6 +29,7 @@ defmodule TrackerWeb.Router do
 
     resources "/users", UserController
     resources "/tasks", TaskController
+    resources "/time_block", TimeBlockController
 
     post "/session", SessionController, :create
     delete "/session", SessionController, :delete
