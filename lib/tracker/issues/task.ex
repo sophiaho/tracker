@@ -18,8 +18,8 @@ defmodule Tracker.Issues.Task do
   def changeset(%Task{} = task, attrs) do
     task
     |> cast(attrs, [:title, :description, :length, :complete, :user_id])
-    |> validate_required([:title, :description, :length, :complete, :user_id])
-    #|> validate_increment
+    |> validate_required([:title, :description, :length, :complete])
+    |> validate_increment
   end
 
 # ATTRIBUTION: created with the help of a stack overflow question on custom Changeset
